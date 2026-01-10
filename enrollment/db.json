@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "id": "4377",
-      "name": "sam",
-      "email": "sam@gmail.com",
-      "department": "Ai",
-      "course": "pyhton"
-    },
-    {
       "id": "5c6a",
       "name": "sravan",
       "email": "sarvan@gmail.com",

@@ -1,6 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 const UpdateStudent = () => {
+    const [name,setname]=useState("")
+    const [email,setemail]=useState("")
+    const [department,setdepartment]=useState("")
+    const [course,setcourse]=useState("")
+
   return (
     <>
     <center><h2>Add Student</h2></center>

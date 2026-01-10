@@ -1,10 +1,25 @@
-import React,{useState} from 'react'
-
+import React,{useEffect, useState} from 'react'
+import axios from 'axios'
+import { useParams } from 'react-router-dom'
 const UpdateStudent = () => {
     const [name,setname]=useState("")
     const [email,setemail]=useState("")
     const [department,setdepartment]=useState("")
     const [course,setcourse]=useState("")
+
+    let {id}=useParams
+
+    useEffect(()=>{
+        axios.get(`http://localhost:5000/users/${id}`)
+        .then((x)=>{
+            setname(x.data.name)
+            setemail(x.data.email)
+            setdepartment(x.data.department)
+            setcourse(x.data.course)
+        })
+        .catch(err=>console.log(err)
+        )
+    },[])
 
   return (
     <>

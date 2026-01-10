@@ -3,6 +3,7 @@ import Nav from './components/Nav'
 import { BrowserRouter as Router ,Routes,Route } from 'react-router-dom'
 import AddStudent from './pages/AddStudent'
 import ViewStudent from './pages/ViewStudent'
+import UpdateStudent from './pages/UpdateStudent'
 const App = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path='/addstudent' element={<AddStudent/>}/>
         <Route path='/viewstudent' element={<ViewStudent/>}/>
-        
+        <Route path='updatestudent' element={<UpdateStudent/>}/>
       </Routes>
     </Router>
     

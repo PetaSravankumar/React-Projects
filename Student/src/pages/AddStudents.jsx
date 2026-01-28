@@ -8,6 +8,7 @@ const AddStudents = () => {
         <input type="email" placeholder='Enter Student Email' required/><br />
         <input type="text"  placeholder='Enter Department' required/><br />
         <input type="text" placeholder='College Name' required/><br />
+        <button>Submit</button>
     </form>
     </>
   )

@@ -7,13 +7,17 @@ const AddStudents = () => {
     const [college,setCollege]=useState("")
     const handelsubmit=(e)=>{
         e.preventDefault()
-        console.log(username);
-        console.log(email);
-        console.log(dept);
-        console.log(college);
+        const student={
+        username,
+        email,
+        dept,
+        college
+    }
+    console.log(student);
         
     }
-
+    
+    
   return (
     <>
     <form onSubmit={handelsubmit}>

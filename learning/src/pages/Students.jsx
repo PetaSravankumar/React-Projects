@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import "../styles/props.css"
 const Students = (props) => {
   return (
@@ -7,6 +8,15 @@ const Students = (props) => {
         <p>age:{props.age}</p>
     </div>
   )
+}
+
+Students.PropTypes={
+    name:PropTypes.string,
+    age:PropTypes.number
+}
+Students.defaultProps={
+    name:"Guest",
+    age:0
 }
 
 export default Students

@@ -1,11 +1,11 @@
 import React from 'react'
-
+import "../styles/props.css"
 const Students = (props) => {
   return (
-    <>
-    <p>Name:{props.name}</p>
-    
-    </>
+    <div className="student">
+        <p>Name:{props.name}</p>
+        <p>age:{props.age}</p>
+    </div>
   )
 }
 

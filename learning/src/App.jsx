@@ -6,6 +6,7 @@ const App = () => {
     <>
     <Card/>
     <Students name="sravan" age={21}/>
+    <Students name="Kumar" age={22}/>
     </>
   )
 }

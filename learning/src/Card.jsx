@@ -1,5 +1,6 @@
 import React from 'react'
 import profilepic from './assets/shirt.jpg'
+import './styles/card.css'
 const Card = () => {
   return (
     <div className="card">

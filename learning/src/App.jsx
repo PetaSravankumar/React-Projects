@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
     <Card/>
-    <Students name="sravan" age={21}/>
+    <Students name="sravan" age={21} islogoedin={true}/>
     <Students name="Kumar" age={22}/>
     </>
   )

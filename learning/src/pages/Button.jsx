@@ -6,9 +6,13 @@ const Button = () => {
         
         
     }
+    const handelevent2=(name)=>{
+        console.log(`${name} hit me hard bro`);
+        
+    }
   return (
     <>
-    <button onClick={handelevent}>click me ❤️😍</button>
+    <button onClick={()=>handelevent2("sravan")}>click me ❤️😍</button>
     </>
   )
 }

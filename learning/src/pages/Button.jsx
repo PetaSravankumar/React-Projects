@@ -2,7 +2,8 @@ import React from 'react'
 
 const Button = () => {
     function handelevent(){
-        console.log("hlo every one");
+        console.log("helloe every one");
+        
         
     }
   return (

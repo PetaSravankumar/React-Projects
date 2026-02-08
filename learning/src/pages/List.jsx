@@ -2,11 +2,9 @@ import React from 'react'
 
 const List = () => {
     const fruits=['orange','mango','apple','bananna']
-  
+    const fruitsList=fruits.map(e=><li>{e}</li>)
   return (
-    <ul>
-        {fruits.map((e,i)=>(<li key={i}>{e}</li>))}
-    </ul>
+    <ul>{fruitsList}</ul>
   )
 }
 

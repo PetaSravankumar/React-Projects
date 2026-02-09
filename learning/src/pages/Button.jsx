@@ -10,10 +10,21 @@ const Button = () => {
         console.log(`${name} hit me hard bro`);
         
     }
-    const [handelevent,sethandelevent]=useState
+    const [handelevent,sethandelevent]=useState(false)
+    function eventhandel(){
+      if (!handelevent){
+        handelevent1()
+        sethandelevent(true)
+
+      }
+      else{
+        handelevent2("sravan")
+        sethandelevent(false)
+      }
+    }
   return (
     <>
-    <button onClick={()=>handelevent2("sravan")}>click me ❤️😍</button>
+    <button onClick={eventhandel}>click me ❤️😍</button>
     </>
   )
 }

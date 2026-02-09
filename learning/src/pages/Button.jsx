@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Button = () => {
-    function handelevent(){
+    function handelevent1(){
         console.log("helloe every one");
         
         
@@ -10,6 +10,7 @@ const Button = () => {
         console.log(`${name} hit me hard bro`);
         
     }
+    const [handelevent,sethandelevent]=useState
   return (
     <>
     <button onClick={()=>handelevent2("sravan")}>click me ❤️😍</button>

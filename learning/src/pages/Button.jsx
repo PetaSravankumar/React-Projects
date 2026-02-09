@@ -10,17 +10,20 @@ const Button = () => {
         console.log(`${name} hit me hard bro`);
         
     }
+    const gogelbutton=()=>{
+      sethandelevent(!handelevent)
+    }
     const [handelevent,sethandelevent]=useState(false)
     function eventhandel(){
       if (!handelevent){
         handelevent1()
-        sethandelevent(true)
-
+        gogelbutton()
       }
       else{
         handelevent2("sravan")
-        sethandelevent(false)
+        gogelbutton()
       }
+      
     }
   return (
     <>

@@ -1,0 +1,110 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container */
+div {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input section */
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50;
+}
+
+/* Add button */
+button {
+  padding: 10px 12px;
+  margin-left: 6px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+/* ADD button */
+button:first-of-type {
+  background: #4caf50;
+  color: white;
+}
+
+button:first-of-type:hover {
+  background: #43a047;
+}
+
+/* List */
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+/* Task item */
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+li:hover {
+  background: #f1f1f1;
+}
+
+/* Buttons inside list */
+li button {
+  margin-left: 5px;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+/* Delete */
+li button:nth-child(2) {
+  background: #e53935;
+  color: white;
+}
+
+li button:nth-child(2):hover {
+  background: #d32f2f;
+}
+
+/* Up */
+li button:nth-child(3) {
+  background: #2196f3;
+  color: white;
+}
+
+/* Down */
+li button:nth-child(4) {
+  background: #ff9800;
+  color: white;
+}

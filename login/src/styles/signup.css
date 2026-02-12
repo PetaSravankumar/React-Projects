@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F9FAFB;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.loginclass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #4F46E5;
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.loginclass h2{
+    margin-bottom: 15px;
+}
+
+.loginclass p{
+    margin-bottom: 20px;
+}
+
+.loginbutton{
+    padding: 8px 20px;
+    background-color: #10B981;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.loginbutton:hover{
+    background-color: #0f9f6e;
+    transform: scale(1.05);
+}
+
+.loginbutton:active{
+    transform: scale(0.95);
+}
+
+.signupclass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #10B981;
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.signupclass h2{
+    margin-bottom: 25px;
+}
+
+.signupclass input{
+    height: 35px;
+    width: 220px;
+    margin: 8px 0;
+    padding: 5px 10px;
+    background-color: white;
+    color: #111827;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+.signupclass input:focus{
+    transform: scale(1.03);
+}
+
+.signupclass button{
+    margin-top: 15px;
+    width: 60%;
+    padding: 8px;
+    background-color: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 1s ease;
+    transform: scale(1);
+}
+
+.signupclass button:hover{
+    background-color: #3730a3;
+    transform: scale(1.05);
+}
+
+.signupclass button:active{
+    transform: scale(0.95);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

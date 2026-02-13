@@ -23,7 +23,7 @@ const Login = () => {
     }
   return (
     <div className="parent">
-   <div className="loginclass">
+   <div className="loginclass-left">
    <h2>Login Page</h2>
    <form onSubmit={handelform} >
     <input type="text" placeholder='Enter the UserName' required value={name} onChange={(e)=>setname(e.target.value)}/> <br />

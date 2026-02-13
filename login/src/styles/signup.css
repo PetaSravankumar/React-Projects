@@ -1,132 +1,106 @@
-*{
+/* signup.css */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
+    background: #f0f2f5;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    background-color: #F9FAFB;
 }
 
-.container{
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: fadeIn 0.6s ease-in-out;
 }
 
-.loginclass{
+/* Left Side: Curved Login Panel */
+.loginclass {
+    width: 50%;
+    background: linear-gradient(to right, #5c6bc0, #512da8);
+    color: #fff;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    background-color: #4F46E5;
-    height: 350px;
-    width: 350px;
-    padding: 20px;
-    color: white;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+    /* Reverse curve for signup page */
+    border-radius: 0 150px 100px 0;
 }
 
-.loginclass h2{
-    margin-bottom: 15px;
-}
+.loginclass h2 { margin-bottom: 20px; color: #fff; }
 
-.loginclass p{
-    margin-bottom: 20px;
-}
-
-.loginbutton{
-    padding: 8px 20px;
-    background-color: #10B981;
-    color: white;
+.loginbutton {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-top: 20px;
     text-decoration: none;
-    border-radius: 6px;
-    transition: all 1s ease;
-    transform: scale(1);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
-.loginbutton:hover{
-    background-color: #0f9f6e;
-    transform: scale(1.05);
+.loginbutton:hover {
+    background-color: #fff;
+    color: #512da8;
 }
 
-.loginbutton:active{
-    transform: scale(0.95);
-}
-
-.signupclass{
+/* Right Side: Form */
+.signupclass {
+    width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-color: #10B981;
-    height: 350px;
-    width: 350px;
-    padding: 20px;
-    color: white;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 0 40px;
+    text-align: center;
 }
 
-.signupclass h2{
-    margin-bottom: 25px;
+.signupclass h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 30px;
 }
 
-.signupclass input{
-    height: 35px;
-    width: 220px;
+.signupclass input {
+    background-color: #eee;
+    border: none;
     margin: 8px 0;
-    padding: 5px 10px;
-    background-color: white;
-    color: #111827;
-    border-radius: 5px;
-    border: none;
+    padding: 12px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    width: 100%;
     outline: none;
-    transition: all 0.4s ease;
 }
 
-.signupclass input:focus{
-    transform: scale(1.03);
-}
-
-.signupclass button{
-    margin-top: 15px;
-    width: 60%;
-    padding: 8px;
-    background-color: #4F46E5;
-    color: white;
+.signupclass button {
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
     cursor: pointer;
-    transition: all 1s ease;
-    transform: scale(1);
-}
-
-.signupclass button:hover{
-    background-color: #3730a3;
-    transform: scale(1.05);
-}
-
-.signupclass button:active{
-    transform: scale(0.95);
-}
-
-@keyframes fadeIn{
-    from{
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
+    transition: 0.3s;
 }

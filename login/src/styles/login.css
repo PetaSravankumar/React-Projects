@@ -1,123 +1,164 @@
-*{
+/* ===============================
+   GLOBAL RESET
+================================ */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
+    background: #f0f2f5;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #F9FAFB;
 }
 
-.parent{
-    display: flex;
-   
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.signuplogin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-   
-    background-color: #10B981;   
-
-    height: 350px;
-    width: 350px;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    padding: 20px;
-
-    color: white;
-}
-
-.signuplogin h2{
-    margin-bottom: 20px;
-}
-
-.signuplogin p{
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-
-
-.registerbtn{
-    display: inline-block;
-    padding: 8px 20px;
-    background-color: #4F46E5;   
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all 1s ease;
-    transform: scale(1);
-    
-}
-
-.registerbtn:hover{
-    background-color: #3730a3;
-    transform: scale(1.05);
-}
-.registerbtn:active{
-    transform: scale(0.95);  
-}
-
-
-
-.loginclass{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #4F46E5;
-
-    height: 350px;
-    width: 350px;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    padding: 20px;
-
-    color: white;
-}
-
-.loginclass h2{
-    margin-bottom: 30px;
-}
-
-.loginclass input{
-    height: 35px;
-    width: 220px;
-    margin: 8px 0;
-    padding: 5px 10px;
-
+/* ===============================
+   MAIN CONTAINER
+================================ */
+.parent {
     background-color: #ffffff;
-    color: #111827;
-
-    border-radius: 5px;
-    border: none;
-    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    overflow: hidden;
 }
 
-.loginclass button{
-    background-color: #10B981; 
-    cursor: pointer;
-    border-radius: 5px;
+/* ===============================
+   LEFT SIDE - LOGIN FORM
+================================ */
+.loginclass-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.loginclass-left h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.loginclass-left form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginclass-left input {
+    background-color: #eee;
     border: none;
-    width: 60%;
-    padding: 8px;
-    color: white;
+    margin: 8px 0;
+    padding: 12px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    color: #333;
     transition: 0.3s;
 }
 
-.loginclass button:hover{
-    opacity: 0.9;
+.loginclass-left input:focus {
+    background-color: #e0e0e0;
+}
+
+.loginclass-left button {
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 12px 45px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.loginclass-left button:hover {
+    background-color: #3f218a;
+    transform: translateY(-2px);
+}
+
+/* ===============================
+   RIGHT SIDE - PURPLE PANEL
+================================ */
+.signuplogin {
+    width: 50%;
+    background: linear-gradient(135deg, #5c6bc0, #512da8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+
+    /* Smooth modern curve */
+    border-radius: 120px 0 0 120px;
+}
+
+.signuplogin h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.signuplogin p {
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+/* ===============================
+   REGISTER BUTTON
+================================ */
+.registerbtn {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.registerbtn:hover {
+    background-color: #ffffff;
+    color: #512da8;
+    transform: translateY(-2px);
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+@media (max-width: 768px) {
+    .parent {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .loginclass-left,
+    .signuplogin {
+        width: 100%;
+        border-radius: 0;
+        padding: 40px 20px;
+    }
 }

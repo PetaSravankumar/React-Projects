@@ -5,11 +5,14 @@ const App = () => {
   function countChar(event){
     setText(event.target.value) 
   }
+  
 
   return (
     <>
-    <input type="text" required placeholder='enter the input' />
-    <h2 value={text} onChange={setText(countChar)}></h2>
+    <input type="text" required placeholder='enter the input' value={text} onChange={countChar} />
+    <h2 >{text}</h2>
+    <h2>{text.length}</h2>
+   
     </>
   )
 }
